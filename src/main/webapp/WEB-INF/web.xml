@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<servlet>
+		<servlet-name>InsertRecipeServlet</servlet-name>
+		<servlet-class>com.recetaweb.InsertRecipeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertRecipeServlet</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EditRecipeServlet</servlet-name>
+		<servlet-class>com.recetaweb.EditRecipeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditRecipeServlet</servlet-name>
+		<url-pattern>/Edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteRecipeServlet</servlet-name>
+		<servlet-class>com.recetaweb.DeleteRecipeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteRecipeServlet</servlet-name>
+		<url-pattern>/Delete</url-pattern>
+	</servlet-mapping>
+</web-app>
